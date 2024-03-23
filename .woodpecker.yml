@@ -15,7 +15,7 @@ steps:
     commands:
       - ./src/generate-attribution.py
       - ./src/generate-motis-config.py import
-      - cd out && ../ci/motis-import.py
+      - cd out && ../ci/motis-import.py > /dev/null
       - src/generate-motis-config.py full
   push:
     image: ghcr.io/public-transport/transitous/import:latest
