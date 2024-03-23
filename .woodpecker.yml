@@ -1,3 +1,9 @@
+when:
+  - branch: [main, work/jbb/woodpecker]
+  - event: push
+  - event: cron
+    cron: daily-import
+
 steps:
   fetch:
     image: ghcr.io/public-transport/transitous/import:latest
