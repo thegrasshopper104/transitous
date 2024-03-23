@@ -1,6 +1,6 @@
 when:
-  - branch: [main, work/jbb/woodpecker]
   - event: push
+    branch: [main, work/jbb/woodpecker]
   - event: cron
     cron: daily-import
 
